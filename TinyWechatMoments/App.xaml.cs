@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using Asjc.SingletonApp;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Markup;
 
@@ -11,6 +12,9 @@ namespace TinyWechatMoments
     {
         protected override void OnStartup(StartupEventArgs e)
         {
+            if (!SingletonApp.IsNew)
+                Shutdown();
+
             FrameworkElement.LanguageProperty.OverrideMetadata(
                 typeof(FrameworkElement),
                 new FrameworkPropertyMetadata(
