@@ -19,7 +19,7 @@
         </i:EventTrigger>
     </i:Interaction.Triggers>
     <DockPanel>
-        <Expander Header="选项" ExpandDirection="Right" Background="Transparent" BorderBrush="{x:Null}">
+        <Expander Header="选项" ExpandDirection="Right" Background="Transparent" BorderThickness="0">
             <StackPanel Margin="5">
                 <hc:ElementGroup Margin="5">
                     <Button Content="发布" hc:IconElement.Geometry="{StaticResource AddGeometry}" Command="{Binding PostCommand}" HorizontalAlignment="Stretch" Style="{StaticResource ButtonSuccess}"/>
